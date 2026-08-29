@@ -5,8 +5,6 @@ import { cloudflare } from '@cloudflare/vite-plugin';
 export default defineConfig({
   plugins: [
     react(),
-    cloudflare({
-      nodeCompat: true // Garante compatibilidade com módulos do Node
-    })
+    cloudflare()
   ]
 });
